@@ -1,58 +1,50 @@
-// const obj = {
-//   name: "sagar",
-//   class: "7th",
-// };
+//!! practice
 
-// for (const [key, value] of Object.entries(obj)) {
-//   console.log(key, value);
-// }
+//?? decalaring
+// let arr = new Array(2, 3, 4, 32, 2);
+// console.log(arr);
 
-//?? classes
+//?? array can store anything
 
-// class Player {
-//   constructor(name, type) {
-//     this.name = name;
-//     this.type = type;
-//   }
-//   introduce() {
-//     console.log(`Hi i m ${this.name}`);
-//   }
-// }
+// let arra = ["agar", 23, "sgaar"];
+// console.log(arra);
 
-// const player1 = new Player("sagar", "noob");
-// player1.introduce();
+//?? interview question
 
-//?? implmenting an array
-//?? because array is an object
-class Array {
-  constructor() {
-    this.length = 0;
-    this.data = {};
-  }
-  get(index) {
-    return this.data[index];
-  }
-  push(item) {
-    this.data[this.length] = item;
-    this.length++;
-  }
-  pop() {
-    delete this.data[this.length - 1];
-    this.length--;
-  }
+// let arr = [1, 2, 7, 3, 45, 556, 5][(2, 6)];
+// console.log(arr); //6
 
-  delete(index) {
-    const item = this.data[index];
-    this.shiftItems(index);
-  }
-  shiftItems(index) {
-    for (let i = index; i < this.length - 1; i++) {
-      this.data[i] = this.data[i + 1];
-    }
-    delete this.data[this.length - 1];
-    this.length--;
-  }
-}
+//??
+// let arr = [1, 2, 3, 4, 4, 4, 6];
+// arr.unshift(9);
+// arr.shift();
+// arr.shift();
+// console.log(arr);
 
-const newArray = new Array();
-console.log(newArray.get(0));
+//?? inbuilt tracversal method
+//?? map
+// const numbers = [1, 2, 3, 4, 5, 6, 7];
+// numbers.map((item, index, array) => {
+//   console.log(item, index);
+// });
+
+//?? filtyer
+// const number = [1, 2, 3, 4, 54, 5];
+// const nnn = number.filter((item) => {
+//   return item > 50;
+// });
+
+// console.log(nnn);
+
+//?? reduce
+
+// const number = [1, 2, 3, 4, 4, 5, 56, 6, 6, 7];
+
+// const nea = number.reduce((prev, curr) => {
+//   return prev + curr;
+// }, 0);
+
+// console.log(nea);
+// console.log(nea == number);
+
+//?? some (similar filter )
